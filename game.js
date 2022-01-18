@@ -40,12 +40,15 @@ const loop = function () {
     if (playerController.up && player.jumping === false) {        
         player.yVelocity -= 20;
         player.jumping = true;
+        console.log('jump pressed');
     }
     if (playerController.left) {
         player.xVelocity -= 0.5;
+        console.log('left pressed');
     }
     if (playerController.right) {
         player.xVelocity += 0.5;
+        console.log('right pressed');
     }
 
     player.yVelocity += 1.5;
